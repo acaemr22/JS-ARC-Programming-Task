@@ -221,7 +221,7 @@ inputted_material_props.forEach((material) => {
 perMassesAdets.sort((a, b) => a - b);
 perMassesMetres.sort((a, b) => a - b);
 
-// İnitalized in order group the Adets kinds and Metres kinds I will use this later in forEach loop to don't allow a kind of non-Adet mass to match with an Adet kind material
+// Initalized in order group the Adets kinds and Metres kinds I will use this later in forEach loop to don't allow a kind of non-Adet mass to match with an Adet kind material
 let meters = perMassesMetres.length - 1;
 // console.log(perMassesMetres.length);
 let perMasses = perMassesMetres.concat(perMassesAdets);

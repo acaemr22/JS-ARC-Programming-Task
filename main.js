@@ -205,8 +205,9 @@ if (robotMass > 52.5) {
   console.log("Y");
 }
 
+let robotCost = materialCosts.reduce((partialSum, a) => partialSum + a, 0);
 // Print total cost of robot
-console.log("Total Mass of the robot: " + robotMass);
+console.log("Total Cost of the robot: " + robotCost);
 // Initialze two array in order to store perMasses of materials (if kind of material is Adet than add to adets array otherwise add to meters array than concat them to store all of the perMasses in one array)in order to find least perMass that can be used change the robot materials
 //  I put per masses that has kind of meters to first part of the perMasses array because we can take as much we want from the m2 or meters but in adets we need to take much more than it necessary because we can take one by one(in adets)
 let perMassesAdets = [];
